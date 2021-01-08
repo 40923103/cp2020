@@ -19,43 +19,9 @@
 <p>在開始討論主板本身之前，我們希望對可以連接到主板的各種組件有基本的了解。在以後的課程中，我們將詳細介紹這些組件中的每一個，但讓我們看一下主板上的一些關鍵組件。</p>
 <p><img alt="" height="357" src="/images/HAHA.PNG" width="422"/></p>
 <p>Diagram of a motherboard. Copyright: hipspeeds / 123RF Stock Photo</p>
+<p></p>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr">查看上面的主板圖，其中標識了特定的組件。讓我們更仔細地檢查每個組件：</pre>
-<table align="center" cellspacing="0" class="wbtable" height="352" lang="" width="564">
-<tbody>
-<tr class="e">
-<td lang="" style="width: 70px;">Component Name</td>
-<td lang="" style="width: 484px;">Function</td>
-</tr>
-<tr>
-<td lang="" style="width: 70px;">PCI expansion slots</td>
-<td lang="" style="width: 484px;">These allow us to add capabilities to our computers, such as extra USB ports, a new sound card, a modem or network card, and many others. This is a universal card slot that all manufacturers can use when building their cards using a common specification.</td>
-</tr>
-<tr class="e">
-<td lang="" style="width: 70px;">PCIe x1 (PCI express size 1) slot</td>
-<td lang="" style="width: 484px;">This particular motherboard has three of these slots, but this varies from board to board based on its particular form factor. These are the newer slots that are much faster than the older PCI slot. PCIe stands for PCI express, and the x1 indicates that there is one dedicated serial data connection (lane). PCIe comes in a variety of sizes, such as x1, x4, x8, and x16.</td>
-</tr>
-<tr>
-<td lang="" style="width: 70px;">PCIe x16 (PCI express size 16) slot</td>
-<td lang="" style="width: 484px;">These are newer slots that are much faster than the older PCI slot. PCIe stands for PCI express, and the x16 indicates that there are 16 serial lanes. PCIe comes in a variety of sizes, such as x1, x4, x8, and x16.</td>
-</tr>
-<tr class="e">
-<td lang="" style="width: 70px;">Rear input/output cluster</td>
-<td lang="" style="width: 484px;">Each motherboard can offer dedicated, integrated features, such as network cards, sound card, video cards, and a variety of input/output ports all “clustered” together on the board. These components cannot be changed out since they are soldered to the motherboard.</td>
-</tr>
-<tr>
-<td lang="" style="width: 70px;">CPU socket</td>
-<td lang="" style="width: 484px;">The CPU socket is where the central processing unit (the brains of the computer) is inserted.</td>
-</tr>
-<tr class="e">
-<td lang="" style="width: 70px;">Memory slots</td>
-<td lang="" style="width: 484px;">These slots are where extra random access memory (RAM) is inserted to provide capacity to the computer.</td>
-</tr>
-<tr>
-<td lang="" style="width: 70px;">24-pin main power connector</td>
-<td lang="" style="width: 484px;">This 24-pin main power connector is what powers the entire motherboard.</td>
-</tr>
-</tbody>
-</table>
+<div><img alt="" height="450" src="/images/BOOM.PNG" width="560"/></div>
 <div></div>
 <div><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/Q7A9z33Qj7M" width="560"></iframe>
 <div>
@@ -69,7 +35,11 @@
 <div class="page 482422" id="o_u2_m2_internal_2_unit">
 <div class="question ddfb" id="482422">
 <div class="customActivityHolder" data-showinputs="false" height="505" id="custom-482422" layout="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/_u2_m2_internal_2_unit_layout.xml" source="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/DragDropWrapper.js" type="javascript" width="550">
+<div class="component"><img alt="" height="245" src="/images/未命.PNG" width="568"/></div>
 <div class="component"></div>
+<div class="component"><img alt="" height="466" src="/images/DII.PNG" width="561"/></div>
+<div class="component"></div>
+<div class="component"><img alt="" height="607" src="/images/UU.PNG" width="554"/></div>
 </div>
 </div>
 </div>
@@ -79,7 +49,8 @@
 </div>
 </div>
 </div>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre><h2>Develop</h2>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+<p></p><h2>Develop</h2>
 <p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
 <p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
 <p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
